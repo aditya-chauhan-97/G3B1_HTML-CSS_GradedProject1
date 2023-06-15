@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GL Pharmacy</title>
+    <link rel="stylesheet" href="Medical_Test.css">
+	<link rel="stylesheet" href="Home-Page.css">
+</head>
+
+<body>
+	<header>
+        <h1>Lab Test Form</h1>
+        <nav>
+            <ul id="nav">
+                <li><a href="home-Page.html">Home</a></li>
+                <li><a href="#">Our Medicines</a>
+                    <div>
+                        <ul id="sm1">
+                            <li><a href="#">Fever</a></li>
+                            <li><a href="#">Muscle Pains</a></li>
+                            <li><a href="#">Cold and Cough</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Health Care</a>
+                    <div>
+                        <ul id="sm2">
+                            <li><a href="#">Baby Care</a></li>
+                            <li><a href="#">Skin Care</a></li>
+                            <li><a href="#">Home Care</a></li>
+                            <li><a href="#">Personal Care</a></li>
+                            <li><a href="#">Pet Care</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li><a href="Medical_Test.html">Lab Test</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <form action="#">
+            <img src="Lab-Test/lab-test.jpg" alt="Lab-Test">
+            <br>
+            <p>1. Contact Details</p>
+            <div class="row">
+                <div class="column">
+                    <input type="text" title="F_Name" placeholder="Full Name" required>
+                </div>
+                <div class="column">
+                    <input type="number" title="P_Id" placeholder="Patient Id">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <input type="number" title="contact" placeholder="Contact Number" min="6666666666" max="9999999999"
+                        required>
+                </div>
+                <div class="column">
+                    <input type="email" title="Mail" placeholder="E-mail Id">
+                </div>
+            </div>
+            <br>
+
+            <p>2. Address</p>
+            <div class="row">
+                <div class="column">
+                    <input type="text" title="H.No" placeholder="House Number" required>
+                </div>
+                <div class="column">
+                    <input type="text" title="Street" placeholder="Street" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <input type="text" title="Area" placeholder="Area">
+                </div>
+            </div>
+            <div class="address">
+                <label for="State">District:</label>
+                <select name="State" title="State">
+                    <option value="Choose">Choose</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Surat">Surat</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kochin">Kochin</option>
+                </select>
+            </div>
+
+            <br>
+
+            <p>3.Test Type</p>
+            <h5>(* Check atleast one box without fail)</h5>
+            <div class="Lab_test">
+                <input type="checkbox" title="Test1" value="CBC">
+                <label for="Test1">CBC</label><br>
+
+                <input type="checkbox" title="Test2" value="Complete Urine">
+                <label for="Test2">Complete Urine</label><br>
+
+                <input type="checkbox" title="Test3" value="Lipid Profile">
+                <label for="Test3">Lipid Profile</label><br>
+
+                <input type="checkbox" title="Test4" value="Thyroid Stimulating Hormone (TSH)">
+                <label for="Test4">Thyroid Stimulating Hormone (TSH)</label><br>
+
+                <input type="checkbox" title="Test5" value="Gulcose Test">
+                <label for="Test5">Glucose Test </label>
+            </div>
+            <br>
+
+            <p>4. Do you want a hard copy of the report also?</p>
+            <div class="Lab_test">
+                <input type="radio" title="option1" name="option" value="Yes">
+                <label for="option1">Yes</label><br>
+
+                <input type="radio" title="option1" name="option" value="No">
+                <label for="option1">No</label>
+            </div>
+            <br>
+
+            <p>5. Select your Comfortable Date and Time</p>
+            <div class="contact_detail">
+                <input type="date" title="Date" placeholder="Date" required>
+                <br>
+
+                <input type="time" title="Time" placeholder="Time" required>
+                <br>
+            </div>
+            <br>
+
+    </div>
+
+    <button id="reset" type="reset" value="Reset">Reset</button>
+    <button id="submit" type="Submit" value="Submit">Submit</button>
+
+    </form>
+
+</body>
+
+</html>
